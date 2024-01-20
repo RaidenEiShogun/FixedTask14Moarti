@@ -7,15 +7,15 @@ import java.util.ArrayList;
 public class PaintAppModel {
 
     private Color currentColor;
-    private ArrayList<FilledRect> rects;
+    private final ArrayList<FilledRect> rects;
 
     public PaintAppModel() {
-        rects =  new ArrayList<FilledRect>();
+        rects = new ArrayList<>();
     }
 
-    void addPoint(double x, double y){
-        rects.add(new FilledRect(currentColor, x,y));
-        System.out.println(rects);
+    void addPoint(double x, double y) {
+        rects.add(new FilledRect(currentColor, x, y));
+        ExportDrawings.exportDrawings(rects);
     }
 
     public Color getCurrentColor() {
