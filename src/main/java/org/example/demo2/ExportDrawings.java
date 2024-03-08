@@ -10,7 +10,7 @@ import java.util.List;
 public class ExportDrawings {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
-    private static final String FILE_PATH = "C:\\Users\\Windows\\IdeaProjects\\quickfix\\src\\main\\java\\org\\example\\demo2\\drawings.json";
+    private static final String FILE_PATH = "../drawings.json";
 
     public static void exportDrawings(List<FilledRect> rects) {
         try {

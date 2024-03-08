@@ -33,7 +33,7 @@ public class Controller {
     @FXML
     public void initialize(){
         graphicsContext = canvas.getGraphicsContext2D();
-        graphicsContext.setFill(Color.WHITE);
+        graphicsContext.setFill(Color.BLACK);
     }
 }
 
